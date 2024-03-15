@@ -1,0 +1,26 @@
+.custom-card-container {
+  display: flex;
+  justify-content: space-around; /* Distributes space evenly around the cards */
+  padding: 20px; /* Padding around the container */
+}
+
+.custom-card {
+  width: 200px; /* Width of each card */
+  height: 200px; /* Height of each card */
+  background-color: #517be389; /* Light pink background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 40px; /* Padding inside each card */
+  display: flex;
+  flex-direction: column; /* Organizes content vertically */
+  justify-content: flex-start; /* Aligns content to the top */
+  font-family: Arial, sans-serif; /* Font family */
+  color: #333; /* Text color */
+}
+
+.custom-card-header {
+  font-size: 20px; /* Size of the card title */
+   font-weight: bold; /* Makes the title bold */
+   margin-bottom: 10px; /* Space after the title */
+   text-align: center;
+}

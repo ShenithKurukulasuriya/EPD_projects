@@ -1,0 +1,297 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+td a {
+    text-decoration: none;
+    color: #333;
+}
+
+td i {
+    margin-right: 5px;
+}
+
+td a:hover {
+    color: #007bff;
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+.text-danger {
+    color: #dc3545;
+}
+
+.add-user-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #2D9CDB; /* Match the color to your image */
+    color: white;
+    border: none;
+    border-radius: 25px; /* Makes the button rounded */
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    position: absolute; /* or 'fixed' based on your layout needs */
+    right: 20px; /* Adjust the position to match your layout */
+    bottom: 20px; /* Adjust the position to match your layout */
+    cursor: pointer;
+    font-size: 30px; /* Adjust to ensure the plus icon fits well */
+    line-height: 50px; /* Vertically center the plus icon */
+    text-align: center;
+    z-index: 10; /* Ensure it's above other elements */
+  }
+
+  .popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: none;
+    z-index: 10;
+}
+
+.popup.active {
+    display: block;
+}
+  .popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .popup .form h2 {
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+  }
+  .popup .form .form-element{
+    margin: 15px 0px;
+  }
+  .popup .form .form-element label{
+    font-size: 14px;
+    color: #222;
+  }
+  .popup .form .form-element input[type="text"],
+  .popup .form .form-element input[type="password"]{
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+  }
+  .popup .form .form-element button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: #222;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .popup .form .form-element a {
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: #1a79ca;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    display: none;
+    z-index: 9; /* Place it behind the popup */
+}
+
+.popup.active + .overlay {
+    display: block;
+}
+.wrapper {
+    position: relative;
+}
+.popup .form .form-element select {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.popup .form .form-element select:hover {
+    border-color: #007bff;
+}
+
+.popup .form .form-element select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    display: none;
+    z-index: 9; /* Place it behind the popup */
+}
+
+.custom-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: none;
+    z-index: 10;
+}
+
+.custom-popup.active {
+    display: block;
+}
+
+.custom-popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.custom-popup .custom-form h2 {
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+}
+
+.custom-popup .custom-form .custom-form-element {
+    margin: 15px 0px;
+}
+
+.custom-popup .custom-form .custom-form-element label {
+    font-size: 14px;
+    color: #222;
+}
+
+.custom-popup .custom-form .custom-form-element input[type="text"],
+.custom-popup .custom-form .custom-form-element input[type="password"] {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.custom-popup .custom-form .custom-form-element select {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.custom-popup .custom-form .custom-form-element button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: #222;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.custom-popup .custom-form .custom-form-element a {
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: #1a79ca;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.custom-popup .custom-form .custom-form-element select:hover {
+    border-color: #007bff;
+}
+
+.custom-popup .custom-form .custom-form-element select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}

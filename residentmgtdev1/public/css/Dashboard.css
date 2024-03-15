@@ -1,0 +1,84 @@
+/* ======== Styling Dashboard ======== */
+
+.dashboard {
+  padding: 10px;
+}
+
+.heading {
+  margin: 10px 0;
+}
+
+.color-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box {
+  display: flex;
+  height: 120px;
+  flex-direction: column;
+  width: 180px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 10px 5px;
+}
+
+.box i {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+
+
+
+.box p {
+  line-height: 30px;
+}
+
+.skyblue {
+  background-color: rgb(135, 220, 253);
+}
+
+.yellow {
+  background-color: rgb(231, 251, 151);
+}
+
+.purple {
+  background-color: rgb(243, 178, 255);
+}
+
+.red {
+  background-color: rgb(255, 178, 178);
+}
+
+/* ======== Styling Recent Activity ======== */
+.activity {
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.activity table {
+  width: 100%;
+}
+
+tr {
+  row-gap: 0px;
+}
+
+th {
+  line-height: 40px;
+  text-align: left;
+}
+
+td {
+  line-height: 28px;
+}
+
+td,
+th {
+  margin: 0;
+}

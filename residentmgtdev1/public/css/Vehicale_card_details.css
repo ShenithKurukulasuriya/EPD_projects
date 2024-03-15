@@ -1,0 +1,232 @@
+.table-container {
+    width: 1032px;
+    height: 498px;
+    overflow: hidden;
+    background-color: #f9f9f9; /* Light grey background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    padding: 20px; /* Padding around the table */
+    font-family: Arial, sans-serif; /* Font family */
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse borders */
+  }
+
+  th, td {
+    text-align: left; /* Align text to the left */
+    padding: 12px; /* Padding for table cells */
+    border-bottom: 1px solid #ddd; /* Border bottom for each cell */
+  }
+
+  th {
+    background-color: #f2f2f2; /* Slightly darker background for header */
+    font-weight: bold; /* Make header text bold */
+  }
+
+  tr:hover {
+    background-color: #f1f1f1; /* Hover effect for rows */
+  }
+
+  .pagination {
+    text-align: center; /* Center the pagination */
+    padding: 10px; /* Padding for pagination */
+    margin-top: 20px; /* Space between table and pagination */
+  }
+
+  .pagination a {
+    margin: 0 5px; /* Spacing between pagination links */
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Color of pagination links */
+  }
+
+  .pagination a.active {
+    font-weight: bold; /* Make the current page number bold */
+  }
+
+  .pagination a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+  }
+
+  .add-user-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #2D9CDB; /* Match the color to your image */
+    color: white;
+    border: none;
+    border-radius: 25px; /* Makes the button rounded */
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    position: absolute; /* or 'fixed' based on your layout needs */
+    right: 20px; /* Adjust the position to match your layout */
+    bottom: 20px; /* Adjust the position to match your layout */
+    cursor: pointer;
+    font-size: 30px; /* Adjust to ensure the plus icon fits well */
+    line-height: 50px; /* Vertically center the plus icon */
+    text-align: center;
+    z-index: 10; /* Ensure it's above other elements */
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    justify-content: center;
+    align-items: center;
+  
+  }
+  /* Modal Content Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+    /* Style inputs and selects */
+    input[type=text], input[type=password], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    /* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Add this to your CSS file */
+select {
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures the padding does not increase the total width/height */
+}
+
+/* Style the submit button to match the form style */
+#submitUser {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#submitUser:hover {
+  background-color: #45a049;
+}
+  
+.customModalClass {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+.customModalContent {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.closeButton {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeButton:hover,
+.closeButton:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+}
+
+label {
+  font-weight: bold;
+}
+
+  

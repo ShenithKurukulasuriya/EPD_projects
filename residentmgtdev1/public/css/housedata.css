@@ -1,0 +1,236 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #3498db; /* Change this color */
+  color: white;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.add-house-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #2D9CDB; /* Match the color to your image */
+    color: white;
+    border: none;
+    border-radius: 25px; /* Makes the button rounded */
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    position: absolute; /* or 'fixed' based on your layout needs */
+    right: 20px; /* Adjust the position to match your layout */
+    bottom: 20px; /* Adjust the position to match your layout */
+    cursor: pointer;
+    font-size: 30px; /* Adjust to ensure the plus icon fits well */
+    line-height: 50px; /* Vertically center the plus icon */
+    text-align: center;
+    z-index: 10; /* Ensure it's above other elements */
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fff; /* White background */
+  margin: 10% auto;
+  padding: 20px; /* Adjust the padding as needed */
+  border: 1px solid #ddd; /* Light gray border */
+  width: 40%; /* Adjust the width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  border-radius: 5px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.submit-btn {
+  background-color: #7ed56f; /* Light green color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+  
+  .submit-btn:hover {
+    background-color: #6ab04c; /* Darker green on hover */
+  }
+  
+  .small-input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  
+  .form-group {
+    margin-bottom: 20px; /* Space between input fields */
+  }
+  /* Add this to your existing CSS or create a new CSS file */
+.custom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.custom-modal-content {
+  background-color: #fff; /* White background */
+  margin: 10% auto;
+  padding: 20px; /* Adjust the padding as needed */
+  border: 1px solid #ddd; /* Light gray border */
+  width: 40%; /* Adjust the width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  border-radius: 5px;
+}
+
+.custom-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.custom-form-group {
+  margin-bottom: 15px;
+}
+
+/* Add more styling as needed */
+.new-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  padding: 20px 30px;
+  background: #fff;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: none;
+  z-index: 10;
+}
+
+.new-popup.active {
+  display: block;
+}
+
+.new-popup .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  background: #888;
+  color: #eee;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.new-popup .form h2 {
+  text-align: center;
+  color: #222;
+  margin: 10px 0px 20px;
+  font-size: 25px;
+}
+
+.new-popup .form .new-form-element {
+  margin: 15px 0px;
+}
+
+.new-popup .form .new-form-element label {
+  font-size: 14px;
+  color: #222;
+}
+
+.new-popup .form .new-form-element input[type="text"],
+.new-popup .form .new-form-element input[type="password"] {
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.new-popup .form .new-form-element button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background: #222;
+  color: #f5f5f5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.new-popup .form .new-form-element a {
+  display: block;
+  text-align: right;
+  font-size: 15px;
+  color: #1a79ca;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.new-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  display: none;
+  z-index: 9; /* Place it behind the popup */
+}

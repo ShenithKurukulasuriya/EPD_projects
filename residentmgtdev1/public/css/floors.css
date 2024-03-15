@@ -1,0 +1,24 @@
+.House-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.HOu-box {
+  flex-basis: 20%;
+  height: 120px; /* Adjust the height */
+  background-color: #b6d34dc7;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d0d0d0;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-weight: 600; /* Adjust the value to make it less bold */
+  padding: 50px; /* Adjust the padding */
+  text-align: center;
+}
